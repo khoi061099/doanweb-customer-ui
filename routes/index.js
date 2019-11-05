@@ -117,4 +117,114 @@ router.get("/order", function(req, res, next) {
   res.render("pages/order");
 });
 
+router.get("/category/:id", function(req, res, next) {
+  const products = [
+    {
+      thumb:
+        "https://cdn.tgdd.vn/Products/Images/42/210653/iphone-11-pro-max-256gb-green-400x400.jpg",
+      name: "iPhone 11 Pro Max 256GB",
+      price: "37.990.000đ"
+    },
+    {
+      thumb:
+        "https://cdn.tgdd.vn/Products/Images/42/198986/sieu-pham-galaxy-s-moi-2-512gb-black-400x400.jpg",
+      name: "Samsung Galaxy S10+ (512GB)",
+      price: "20.990.000₫"
+    },
+    {
+      thumb:
+        "https://cdn.tgdd.vn/Products/Images/42/202703/oppo-f11-pro-128gb-400x400.jpg",
+      name: "OPPO F11 Pro 128GB",
+      price: "7.490.000₫"
+    },
+    {
+      thumb:
+        "https://cdn.tgdd.vn/Products/Images/42/207641/samsung-galaxy-a50s-green-400x400.jpg",
+      name: "Samsung Galaxy A50s",
+      price: "6.990.000₫"
+    },
+    {
+      thumb:
+        "https://cdn.tgdd.vn/Products/Images/42/190324/iphone-xs-256gb-white-400x400.jpg",
+      name: "iPhone Xs 256GB",
+      price: "29.990.000₫"
+    },
+    {
+      thumb:
+        "https://cdn.tgdd.vn/Products/Images/42/171028/blackberry-key2-4-400x400.jpg",
+      name: "BlackBerry KEY2",
+      price: "15.990.000₫"
+    },
+    {
+      thumb:
+        "https://cdn.tgdd.vn/Products/Images/42/74110/iphone-7-gold-400x400.jpg",
+      name: "iPhone 7 32GB",
+      price: "9.990.000₫"
+    },
+    {
+      thumb:
+        "https://cdn.tgdd.vn/Products/Images/42/210243/vivo-v17-pro-blue-noo-400x400.jpg",
+      name: "Vivo V17 Pro",
+      price: "9.990.000₫"
+    }
+  ];
+
+  res.render("pages/category", { products });
+});
+
+router.get("/manufacturer/:id", function(req, res, next) {
+  const products = [
+    {
+      thumb:
+        "https://cdn.tgdd.vn/Products/Images/42/210653/iphone-11-pro-max-256gb-green-400x400.jpg",
+      name: "iPhone 11 Pro Max 256GB",
+      price: "37.990.000đ"
+    },
+    {
+      thumb:
+        "https://cdn.tgdd.vn/Products/Images/42/198986/sieu-pham-galaxy-s-moi-2-512gb-black-400x400.jpg",
+      name: "Samsung Galaxy S10+ (512GB)",
+      price: "20.990.000₫"
+    },
+    {
+      thumb:
+        "https://cdn.tgdd.vn/Products/Images/42/202703/oppo-f11-pro-128gb-400x400.jpg",
+      name: "OPPO F11 Pro 128GB",
+      price: "7.490.000₫"
+    },
+    {
+      thumb:
+        "https://cdn.tgdd.vn/Products/Images/42/207641/samsung-galaxy-a50s-green-400x400.jpg",
+      name: "Samsung Galaxy A50s",
+      price: "6.990.000₫"
+    },
+    {
+      thumb:
+        "https://cdn.tgdd.vn/Products/Images/42/190324/iphone-xs-256gb-white-400x400.jpg",
+      name: "iPhone Xs 256GB",
+      price: "29.990.000₫"
+    },
+    {
+      thumb:
+        "https://cdn.tgdd.vn/Products/Images/42/171028/blackberry-key2-4-400x400.jpg",
+      name: "BlackBerry KEY2",
+      price: "15.990.000₫"
+    },
+    {
+      thumb:
+        "https://cdn.tgdd.vn/Products/Images/42/74110/iphone-7-gold-400x400.jpg",
+      name: "iPhone 7 32GB",
+      price: "9.990.000₫"
+    },
+    {
+      thumb:
+        "https://cdn.tgdd.vn/Products/Images/42/210243/vivo-v17-pro-blue-noo-400x400.jpg",
+      name: "Vivo V17 Pro",
+      price: "9.990.000₫"
+    }
+  ];
+
+  res.render("pages/manufacturer", { products });
+});
+
 module.exports = router;

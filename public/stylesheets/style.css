@@ -5,3 +5,7 @@
     color: red;
     font-weight: bold;
 }
+
+.home .card {
+    margin-top: 16px;
+}
