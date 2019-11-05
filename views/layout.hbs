@@ -18,14 +18,25 @@
     <nav class="my-2 my-md-0 mr-auto">
       <a class="navbar-brand" href="/">LyLi Shop</a>
     </nav>
+    <div class="dropdown">
+      <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+        <i class="fa fa-user"></i>
+      </button>
+      <div class="dropdown-menu">
+        <a class="dropdown-item" href="/users">Thông tin cá nhân</a>
+        <a class="dropdown-item" href="/users/orders">Lịch sử đơn hàng</a>
+      </div>
+    </div>
 
     <a class="p-2 text-dark" href="/search">Tìm kiếm</a>
-     <a href="/cart" class="btn btn-outline-primary">
+    <a href="/cart" class="btn btn-outline-primary">
       <i class="fa fa-shopping-cart"></i>
       <span class="badge badge-danger">4</span>
     </a>
     <a class="p-2 text-dark" href="/users/login">Đăng nhập</a>
     <a class="btn btn-outline-primary" href="/users/register">Đăng ký</a>
+
+
   </div>
 
   {{{body}}}

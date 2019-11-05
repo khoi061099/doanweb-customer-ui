@@ -3,8 +3,13 @@ var router = express.Router();
 
 /* GET users listing. */
 router.get("/", function(req, res, next) {
-  res.send("respond with a resource");
+  res.render("pages/information");
 });
+
+router.get("/orders", function(req, res, next) {
+  res.render("pages/order");
+});
+
 
 router.get("/register", function(req, res, next) {
   res.render("pages/register");
