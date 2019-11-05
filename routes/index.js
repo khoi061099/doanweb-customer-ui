@@ -39,25 +39,29 @@ router.get("/", function(req, res, next) {
       ]
     },
     {
-      category: 'Laptop',
-      products:[
+      category: "Laptop",
+      products: [
         {
-          thumb: "https://cdn.tgdd.vn/Products/Images/44/208863/acer-swift-sf315-52-38yq-i3-8130u-4gb-1tb-156f-win-400x400.jpg",
+          thumb:
+            "https://cdn.tgdd.vn/Products/Images/44/208863/acer-swift-sf315-52-38yq-i3-8130u-4gb-1tb-156f-win-400x400.jpg",
           name: "HP 348 G5 i3 7020U (7XJ62PA)",
           price: "9.990.000₫"
         },
         {
-          thumb: "https://cdn.tgdd.vn/Products/Images/44/210200/acer-switch-sw512-52p-34rs-i3-7130u-4gb-128gb-win10-400x400.jpg",
+          thumb:
+            "https://cdn.tgdd.vn/Products/Images/44/210200/acer-switch-sw512-52p-34rs-i3-7130u-4gb-128gb-win10-400x400.jpg",
           name: "Acer Switch 5 SW512 52P 34RS i3 7130U (NT.LDTSV.004)",
           price: "15.740.000₫"
         },
         {
-          thumb: "https://cdn.tgdd.vn/Products/Images/44/195078/lenovo-ideapad-330s-14ikbr-i5-8250u-4gb-1tb-win10-33397-thumb-1-400x400.jpg",
+          thumb:
+            "https://cdn.tgdd.vn/Products/Images/44/195078/lenovo-ideapad-330s-14ikbr-i5-8250u-4gb-1tb-win10-33397-thumb-1-400x400.jpg",
           name: "Lenovo Ideapad 330S 14IKBR i5 8250U (81F400NLVN)",
           price: "12.490.000₫"
         },
         {
-          thumb: "https://cdn.tgdd.vn/Products/Images/44/203456/lenovo-ideapad-c340-14iwl-i3-8145u-8gb-256gb-touch-22-400x400.jpg",
+          thumb:
+            "https://cdn.tgdd.vn/Products/Images/44/203456/lenovo-ideapad-c340-14iwl-i3-8145u-8gb-256gb-touch-22-400x400.jpg",
           name: "Lenovo ideapad C340 14IWL i3 8145U (81N4003SVN)",
           price: "15.190.000₫"
         }
@@ -73,23 +77,25 @@ router.get("/", function(req, res, next) {
           price: "784.000₫"
         },
         {
-          thumb: "https://cdn.tgdd.vn/Products/Images/382/144572/loa-bluetooth-esaver-s12b-2-den-avatar-2-400x400.jpg",
+          thumb:
+            "https://cdn.tgdd.vn/Products/Images/382/144572/loa-bluetooth-esaver-s12b-2-den-avatar-2-400x400.jpg",
           name: "Loa Bluetooth eSaver S12B-2 Đen",
           price: "712.000₫"
         },
         {
-          thumb: "https://cdn.tgdd.vn/Products/Images/58/205882/cap-lightning-mfi-1m-mbest-ds286-wb-xam-fix1-400x400.jpg",
+          thumb:
+            "https://cdn.tgdd.vn/Products/Images/58/205882/cap-lightning-mfi-1m-mbest-ds286-wb-xam-fix1-400x400.jpg",
           name: "Cáp Lightning MFI 1 m Mbest DS286-WB Xám",
           price: "175.000₫"
         },
         {
-          thumb: "https://cdn.tgdd.vn/Products/Images/54/206665/tai-nghe-bluetooth-mozard-flex4-den-xanh-1-600x600-1-400x400.jpg",
+          thumb:
+            "https://cdn.tgdd.vn/Products/Images/54/206665/tai-nghe-bluetooth-mozard-flex4-den-xanh-1-600x600-1-400x400.jpg",
           name: "Tai nghe Bluetooth Mozard Flex4 Đen Xanh",
           price: "262.000₫"
         }
       ]
     }
- 
   ];
 
   res.render("index", { title: "Express", data });
@@ -105,6 +111,10 @@ router.get("/cart", function(req, res, next) {
 
 router.get("/search", function(req, res, next) {
   res.render("pages/search");
+});
+
+router.get("/order", function(req, res, next) {
+  res.render("pages/order");
 });
 
 module.exports = router;
